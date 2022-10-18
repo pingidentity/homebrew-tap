@@ -1,8 +1,8 @@
 class Pingctl < Formula
   desc "pingctl - A PingIdentity CLI"
   homepage "https://pingidentity.github.io/pingctl"
-  url "https://github.com/pingidentity/pingctl/archive/v1.0.5.tar.gz"
-  sha256 "4933948650636093f30a4f8c61a275fbc6b2f2500ec3b776d554095ea65cd175"
+  url "https://github.com/pingidentity/pingctl/archive/v1.0.6.tar.gz"
+  sha256 "d5e12e64c4b8010f246487a6bc56f8ea6ee3e42b8fb399f2c05574420d50e34c"
 
   depends_on "kubernetes-cli"
   depends_on "kubectx"
