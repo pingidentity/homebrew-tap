@@ -4,6 +4,8 @@ class Pingctl < Formula
   url "https://github.com/pingidentity/pingctl/archive/v1.0.6.tar.gz"
   sha256 "d5e12e64c4b8010f246487a6bc56f8ea6ee3e42b8fb399f2c05574420d50e34c"
 
+  deprecate! date: "2025-09-12", because: :unmaintained, replacement: "pingcli"
+
   depends_on "kubernetes-cli"
   depends_on "kubectx"
   depends_on "kustomize"
