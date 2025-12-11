@@ -11,7 +11,7 @@ class PingoneMcpServer < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/pingidentity/pingone-mcp-server/releases/download/v0.0.1/pingone-mcp-server_0.0.1_darwin_amd64"
-      sha256 "57ea6a675cc8fbea88630b24637603f16a4bbff48eac27b3d6a2986870ae72b8"
+      sha256 "3e839ff0c32a085290dd5d6c98043dd7cd4f93145c858057501f9d36320fbbb6"
 
       def install
         bin.install "pingone-mcp-server_0.0.1_darwin_amd64" => "pingone-mcp-server"
@@ -19,7 +19,7 @@ class PingoneMcpServer < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/pingidentity/pingone-mcp-server/releases/download/v0.0.1/pingone-mcp-server_0.0.1_darwin_arm64"
-      sha256 "dda264150642c256f36d7f574ed203d662be93af7451acc7c52eea7d298e1f58"
+      sha256 "2f8c00a73603821fe84aa1c06116c9bfb76399d89c611de91b61cbed21e3c418"
 
       def install
         bin.install "pingone-mcp-server_0.0.1_darwin_arm64" => "pingone-mcp-server"
@@ -30,14 +30,14 @@ class PingoneMcpServer < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/pingidentity/pingone-mcp-server/releases/download/v0.0.1/pingone-mcp-server_0.0.1_linux_amd64"
-      sha256 "d710e9749cbe1af5d6e923279c0f14da82a50da095f0bd0209995f50e531ee1d"
+      sha256 "c1ccee233d81332d9c7298eb1d7ebd9c103a75ff58149f431bb818453b27663a"
       def install
         bin.install "pingone-mcp-server_0.0.1_linux_amd64" => "pingone-mcp-server"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/pingidentity/pingone-mcp-server/releases/download/v0.0.1/pingone-mcp-server_0.0.1_linux_arm64"
-      sha256 "0b6f5b0e21ecd3be107ea3eb3b932580998a1adce6b2328a679e2607952054c6"
+      sha256 "e9c245409a1ac23e53357b4d8d7dfddaaef8ab7bb5f1bb3a9ce829362244afa4"
       def install
         bin.install "pingone-mcp-server_0.0.1_linux_arm64" => "pingone-mcp-server"
       end
