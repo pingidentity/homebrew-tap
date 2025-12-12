@@ -5,41 +5,41 @@
 class PingoneMcpServer < Formula
   desc "The PingOne MCP (Model Context Protocol) server enables AI assistants to review and manage PingOne tenants by integrating the PingOne management API to AI assistant conversations."
   homepage "https://github.com/pingidentity/pingone-mcp-server"
-  version "0.0.1"
+  version "0.0.2"
   license "Apache License 2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pingidentity/pingone-mcp-server/releases/download/v0.0.1/pingone-mcp-server_0.0.1_darwin_amd64"
-      sha256 "3e839ff0c32a085290dd5d6c98043dd7cd4f93145c858057501f9d36320fbbb6"
+      url "https://github.com/pingidentity/pingone-mcp-server/releases/download/v0.0.2/pingone-mcp-server_0.0.2_darwin_amd64"
+      sha256 "27ef27081bb30e153931e0b2046a03604b21ee806d69899b4353e54769a84e73"
 
       def install
-        bin.install "pingone-mcp-server_0.0.1_darwin_amd64" => "pingone-mcp-server"
+        bin.install "pingone-mcp-server_0.0.2_darwin_amd64" => "pingone-mcp-server"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pingidentity/pingone-mcp-server/releases/download/v0.0.1/pingone-mcp-server_0.0.1_darwin_arm64"
-      sha256 "2f8c00a73603821fe84aa1c06116c9bfb76399d89c611de91b61cbed21e3c418"
+      url "https://github.com/pingidentity/pingone-mcp-server/releases/download/v0.0.2/pingone-mcp-server_0.0.2_darwin_arm64"
+      sha256 "7b1203722d7a60eb5ed80f5318e750abcb5e46651b528ce65d006f290f56d757"
 
       def install
-        bin.install "pingone-mcp-server_0.0.1_darwin_arm64" => "pingone-mcp-server"
+        bin.install "pingone-mcp-server_0.0.2_darwin_arm64" => "pingone-mcp-server"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pingidentity/pingone-mcp-server/releases/download/v0.0.1/pingone-mcp-server_0.0.1_linux_amd64"
-      sha256 "c1ccee233d81332d9c7298eb1d7ebd9c103a75ff58149f431bb818453b27663a"
+      url "https://github.com/pingidentity/pingone-mcp-server/releases/download/v0.0.2/pingone-mcp-server_0.0.2_linux_amd64"
+      sha256 "d19f8c987c581b6b7551628b4b564ecc4122ff9105407e2f717b9b45f2a912bb"
       def install
-        bin.install "pingone-mcp-server_0.0.1_linux_amd64" => "pingone-mcp-server"
+        bin.install "pingone-mcp-server_0.0.2_linux_amd64" => "pingone-mcp-server"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pingidentity/pingone-mcp-server/releases/download/v0.0.1/pingone-mcp-server_0.0.1_linux_arm64"
-      sha256 "e9c245409a1ac23e53357b4d8d7dfddaaef8ab7bb5f1bb3a9ce829362244afa4"
+      url "https://github.com/pingidentity/pingone-mcp-server/releases/download/v0.0.2/pingone-mcp-server_0.0.2_linux_arm64"
+      sha256 "9ae7ffac5639a7bfc820386f4a1d6b5947550a5686dad87ec2432dbc3baf5131"
       def install
-        bin.install "pingone-mcp-server_0.0.1_linux_arm64" => "pingone-mcp-server"
+        bin.install "pingone-mcp-server_0.0.2_linux_arm64" => "pingone-mcp-server"
       end
     end
   end
