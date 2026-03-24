@@ -5,41 +5,41 @@
 class Pingcli < Formula
   desc "The Ping CLI is a unified command line interface for configuring and managing Ping Identity Services."
   homepage "https://github.com/pingidentity/pingcli"
-  version "0.8.2"
+  version "0.8.3"
   license "Apache License 2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pingidentity/pingcli/releases/download/v0.8.2/pingcli_0.8.2_darwin_amd64"
-      sha256 "bb3d195a5005b35bd3dbc68d59783529d7b356652c07e633af7d5f71cfd53295"
+      url "https://github.com/pingidentity/pingcli/releases/download/v0.8.3/pingcli_0.8.3_darwin_amd64"
+      sha256 "e9d76eeea1aad82f905e0a1d7cba3ace08f467b685836416d7f12c5c9b1615b6"
 
       define_method(:install) do
-        bin.install "pingcli_0.8.2_darwin_amd64" => "pingcli"
+        bin.install "pingcli_0.8.3_darwin_amd64" => "pingcli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pingidentity/pingcli/releases/download/v0.8.2/pingcli_0.8.2_darwin_arm64"
-      sha256 "c0bc76b093a9864560995dd9cf453dceba321a4c8dde0605eb404166f7915639"
+      url "https://github.com/pingidentity/pingcli/releases/download/v0.8.3/pingcli_0.8.3_darwin_arm64"
+      sha256 "f6adcd72d1f05edc95543c588345be2f6031f606ee2943a300de965424e79b94"
 
       define_method(:install) do
-        bin.install "pingcli_0.8.2_darwin_arm64" => "pingcli"
+        bin.install "pingcli_0.8.3_darwin_arm64" => "pingcli"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pingidentity/pingcli/releases/download/v0.8.2/pingcli_0.8.2_linux_amd64"
-      sha256 "4ba0fa9a1832dd0da2989afbdb8fd925243a3a81a6fdcc936a6c41445494de47"
+      url "https://github.com/pingidentity/pingcli/releases/download/v0.8.3/pingcli_0.8.3_linux_amd64"
+      sha256 "e645da45947c3bc5ca796c57a522aff74c8f13a5748bbcdfc2753ce419a2e4b1"
       define_method(:install) do
-        bin.install "pingcli_0.8.2_linux_amd64" => "pingcli"
+        bin.install "pingcli_0.8.3_linux_amd64" => "pingcli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pingidentity/pingcli/releases/download/v0.8.2/pingcli_0.8.2_linux_arm64"
-      sha256 "a594db2054d8cc5a2e555999fde8a408eae40fdaf6365f3516788ad1e0b135f0"
+      url "https://github.com/pingidentity/pingcli/releases/download/v0.8.3/pingcli_0.8.3_linux_arm64"
+      sha256 "2824f6e1c76812ac93484347c53f0fb6061b23b63468e41340740594c99b2652"
       define_method(:install) do
-        bin.install "pingcli_0.8.2_linux_arm64" => "pingcli"
+        bin.install "pingcli_0.8.3_linux_arm64" => "pingcli"
       end
     end
   end
