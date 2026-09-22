@@ -5,41 +5,41 @@
 class PingcliPluginTerraformer < Formula
   desc "Ping CLI plugin for converting PingOne DaVinci flows to Terraform HCL"
   homepage "https://github.com/pingidentity/pingcli-plugin-terraformer"
-  version "0.4.0"
+  version "0.5.0"
   license "Apache License 2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pingidentity/pingcli-plugin-terraformer/releases/download/v0.4.0/pingcli-terraformer_0.4.0_darwin_amd64"
-      sha256 "baaab82bdf998f7a27548eb473606978ba38328fb18f24376a6ed1188f937dcd"
+      url "https://github.com/pingidentity/pingcli-plugin-terraformer/releases/download/v0.5.0/pingcli-terraformer_0.5.0_darwin_amd64"
+      sha256 "89e1ef88755bf02137845f60ccf8ae0596dde682f7519b9b7c6210bb9413504b"
 
       define_method(:install) do
-        bin.install "pingcli-terraformer_0.4.0_darwin_amd64" => "pingcli-terraformer"
+        bin.install "pingcli-terraformer_0.5.0_darwin_amd64" => "pingcli-terraformer"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pingidentity/pingcli-plugin-terraformer/releases/download/v0.4.0/pingcli-terraformer_0.4.0_darwin_arm64"
-      sha256 "de72cee9c09ffdd5d529b907ed05bd7ed65f9d1cf8f447c2b42fe3d67f4331ef"
+      url "https://github.com/pingidentity/pingcli-plugin-terraformer/releases/download/v0.5.0/pingcli-terraformer_0.5.0_darwin_arm64"
+      sha256 "d37ddd3070b0edde06e703021af3c050e24189287dcac71c3fb0577b4e7e4ac2"
 
       define_method(:install) do
-        bin.install "pingcli-terraformer_0.4.0_darwin_arm64" => "pingcli-terraformer"
+        bin.install "pingcli-terraformer_0.5.0_darwin_arm64" => "pingcli-terraformer"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pingidentity/pingcli-plugin-terraformer/releases/download/v0.4.0/pingcli-terraformer_0.4.0_linux_amd64"
-      sha256 "fd59494d68e8e7eda050556ed7610a9bfdcd9135ac58f8210ce1116eca91cdbc"
+      url "https://github.com/pingidentity/pingcli-plugin-terraformer/releases/download/v0.5.0/pingcli-terraformer_0.5.0_linux_amd64"
+      sha256 "4813b56736595f9812602f28e5da088e91ad42697d8321c4b9e38e25de9449a7"
       define_method(:install) do
-        bin.install "pingcli-terraformer_0.4.0_linux_amd64" => "pingcli-terraformer"
+        bin.install "pingcli-terraformer_0.5.0_linux_amd64" => "pingcli-terraformer"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pingidentity/pingcli-plugin-terraformer/releases/download/v0.4.0/pingcli-terraformer_0.4.0_linux_arm64"
-      sha256 "8c1136c4d9298f6dc51bb0aafd7fd436c38409eff6efd7cd6ff720e2fb25d216"
+      url "https://github.com/pingidentity/pingcli-plugin-terraformer/releases/download/v0.5.0/pingcli-terraformer_0.5.0_linux_arm64"
+      sha256 "480340c960546c172eda794f23e6ce16a4277c12b39f2b28a7788a86f6bbac5f"
       define_method(:install) do
-        bin.install "pingcli-terraformer_0.4.0_linux_arm64" => "pingcli-terraformer"
+        bin.install "pingcli-terraformer_0.5.0_linux_arm64" => "pingcli-terraformer"
       end
     end
   end
